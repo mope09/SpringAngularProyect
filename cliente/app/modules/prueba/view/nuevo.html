@@ -1,0 +1,22 @@
+<div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            	<h2 class="post-title">Nuevo Empleado</h2>
+                <div class="post-preview">               
+			    <label for="code">Nombre: </label> 
+                <input type="text" class="form-control" id="nombre" name="nombre"
+                                   ng-model="empleado.nombre" required >                            
+                <label for="direccion">Direccion: </label> 
+                <input type="text" class="form-control" id="direccion" name="direccion"
+                                   ng-model="empleado.direccion" required >         	  
+                </div>
+            </div>
+        </div>
+        <br></br>
+        <div class="row">
+        	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <a href="#" class="btn btn-default" ng-click="ingresar_nuevo()"> GUARDAR</a>        		
+        	</div>
+        </div>
+</div>
+

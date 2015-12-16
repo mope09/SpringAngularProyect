@@ -1,0 +1,25 @@
+<div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            	<h2 class="post-title">Empleados - Lista </h2>
+                <div class="post-preview">               
+			    <table ng-table="vm.tableParams"  class="table" show-filter="true">
+				    <tr ng-repeat="prueba in pruebas">
+				        <td title="'Id'" filter="{ 'id': 'text' }" sortable="'id'">
+				           {{prueba.id}}</td>
+				         <td title="'Nombre'" filter="{ nombre: 'text'}" sortable="'nombre'">
+				             <a href="#!/editar/{{prueba._id}}">{{prueba.nombre}}</a></td>			
+				         <td title="'Direccion'" filter="{ direccion: 'text'}" sortable="'direccion'">
+				            {{prueba.direccion}}</td>						        
+				    </tr>
+			  </table>			  
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        		  <a href="#!/nuevo/" class="btn btn-default"> NUEVO</a>
+        	</div>
+        </div>
+</div>
+
